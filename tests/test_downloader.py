@@ -68,6 +68,7 @@ class TestSubDownloaders(unittest.TestCase):
                 self.assertTrue('lan' in v, msg=msg)
                 self.assertIsInstance(v['lan'], int, msg=msg)
                 self.assertTrue('link' in v, msg=msg)
+                self.assertTrue('session' in v, msg=msg)
 
         test_name = 'The.Flash.S01E01.mkv'
 

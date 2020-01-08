@@ -58,7 +58,7 @@ class ZimuzuDownloader(Downloader):
                     type_score += ('繁体' in text) * 2
                     type_score += ('简体' in text) * 4
                     type_score += ('中英' in text) * 8
-                    sub_dict[sub_name] = {'lan': type_score, 'link': sub_url}
+                    sub_dict[sub_name] = {'lan': type_score, 'link': sub_url, 'session': None}
                     if len(sub_dict) >= sub_num:
                         del keywords[:]  # 字幕条数达到上限，清空keywords
                         break
